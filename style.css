@@ -1,3 +1,19 @@
+a {
+    text-decoration: none;
+}
+
+.isActive {
+
+    color: #2375E1;
+    border-bottom: 3px solid #2375E1;
+
+}
+
+.isActive img {
+    background: #2375E1;
+
+}
+
 .bg-menu {
     display: flex;
     height: 64px;
@@ -19,11 +35,8 @@
     flex-direction: column;
     display: flex;
     height: 112px;
-    width: 1288px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
     background-color: white;
+    width: 100%;
 
 }
 
@@ -127,13 +140,13 @@
 
 }
 
-.Time {
+.time {
     display: flex;
     height: 22px;
     margin-left: 19px;
 }
 
-.Time img {
+.time img {
     position: relative;
     height: 14px;
     width: 16px;
@@ -142,7 +155,7 @@
     border-radius: 0px;
 }
 
-.Time span {
+.time span {
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -240,30 +253,27 @@
 .main {
     margin-top: 24px;
     display: flex;
-    width: 99%;
+    background-color: #E5E5E5;
+
+    justify-content: center;
+}
+
+.left-main {
     background-color: #E5E5E5;
     margin-left: 32px;
 }
 
-.left-main {
-    width: 872px;
-    background-color: white;
-    height: 550px;
-}
-
 .main-right {
-    width: 352px;
-
-    height: 351px;
     margin-left: 24px;
     background-color: #E5E5E5;
     margin-right: 16px;
+
 }
 
 .content {
+    background-color: white;
     display: block;
     width: 840px;
-    height: 546px;
     padding: 16px;
 
 
@@ -283,14 +293,9 @@
 
 .info {
     display: flex;
-    width: 99%;
     height: 20px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
 }
 
 .galka {
@@ -320,9 +325,8 @@
 
 body {
     background-color: #E5E5E5;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
+    margin: 0 auto;
+
 
 }
 
@@ -507,10 +511,9 @@ body {
     display: flex;
     align-items: center;
     padding: 16px;
-    margin-top: 24px;
-    width: 840px;
     background-color: white;
-    margin-left: 32px;
+    margin-top: 24px;
+
 }
 
 .main-footer span {
@@ -526,7 +529,7 @@ body {
 }
 
 .profile {
-    width: 352px;
+
     height: 312px;
     text-align: center;
     background-color: white;
@@ -543,7 +546,6 @@ body {
 
 .name-profile {
     margin-top: 16px;
-/ / styleName: Subheader 2 / Regular;
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
@@ -557,7 +559,6 @@ body {
 
 .description-profile {
 
-/ / styleName: Caption / Regular;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -603,7 +604,6 @@ body {
 
 .Navigation span {
     padding-left: 24px;
-/ / styleName: Body / Regular;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -646,7 +646,6 @@ body {
 
 .menu-item span {
     position: relative;
-/ / styleName: Body / Regular;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -673,7 +672,6 @@ body {
 
 .right-item span {
     position: relative;
-/ / styleName: Caption / Regular;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -741,7 +739,6 @@ body {
 
 .menu-right-footer {
     margin-top: 24px;
-    width: 352px;
     height: 190px;
     background: white;
 }
@@ -759,7 +756,6 @@ body {
 }
 
 textarea::placeholder {
-/ / styleName: Body / Regular;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -769,4 +765,8 @@ textarea::placeholder {
     text-align: left;
     padding-left: 24px;
     padding-top: 10px;
+}
+
+#contentBody{
+    margin: 0;
 }
