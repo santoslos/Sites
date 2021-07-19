@@ -3,17 +3,18 @@ const timer = () => setInterval(() => {
     let minute = parseInt(sessionStorage.getItem('min'));
     let hour = parseInt(sessionStorage.getItem('h'));
 
+
     console.log(seconds)
 
-    if (seconds > 59) {
+    if (seconds >= 59) {
 
         seconds = 0;
         minute += 1;
 
-        if (minute > 59) {
+        if (minute >= 59) {
             hour += 1;
             minute = 0;
-            if (hour > 23) {
+            if (hour >= 23) {
                 hour = 0
                 seconds = 0;
                 minute = 0;

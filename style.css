@@ -770,3 +770,6 @@ textarea::placeholder {
 #contentBody{
     margin: 0;
 }
+a{
+    text-decoration: none;
+}

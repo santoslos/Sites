@@ -1,3 +1,9 @@
+<script>
+    window.onload = function () {
+        sessionStorage.setItem('page', 'timer.html')
+        document.location.href = 'index.html'
+    }
+</script>
 <link rel="stylesheet" href="timer.css">
 <div class="mainTimer">
     <div class="timeBlock">
@@ -13,9 +19,5 @@
             <span id="sec">0</span>
         </div>
     </div>
-    <script>
-        window.onload = function () {
-            document.location.href = 'index.html'
-        }
-    </script>
+
 </div>
