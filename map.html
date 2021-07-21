@@ -1,0 +1,27 @@
+<title>Title</title>
+<link rel="stylesheet" href="styleMap.css">
+<script>
+    window.onload = function () {
+        sessionStorage.setItem('page', 'map.html');
+        document.location.href = 'index.html';
+    }
+</script>
+
+
+
+<div class="main-head">
+    <div class="mainMap">
+        <div class="spinner-border" role="status">
+            <img src="img/preloader.svg" alt="">
+        </div>
+        <div class="mainHeader">
+
+            <span>Basic map</span>
+            <img src="img/Vector_top.png" alt="">
+        </div>
+        <div id="YMapsID"></div>
+    </div>
+</div>
+
+<script src="geolocation.js" type="text/javascript"></script>
+

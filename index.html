@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c84c56d2-d002-4770-97e0-0de35bff37d5"
+            type="text/javascript"></script>
+    <script src="main.js"></script>
+    <script src='timer.js'></script>
+
+</head>
+
+
+<body>
+
+<header class="header">
+    <div class="bg-menu">
+        <div class="block-1">
+            <img src="img/Vector.png" class="vector"/>
+            <span>User Pages</span>
+        </div>
+        <div class="union-cont">
+            <img src="img/Unionmen.png" class="union"/>
+            <img src="img/Unionmen.png" class="union"/>
+
+        </div>
+    </div>
+    <div class="nav">
+        <div class="items">
+            <a href="activety.html" onclick=" showContent('activety.html',false,event)">
+                <div class="activety">
+                    <img src="img/Subtract.png"/>
+                    <span>Activety</span>
+                </div>
+            </a>
+            <a href="map.html" onclick=" showContent('map.html',false,event)">
+                <div class="map">
+                    <img src="img/map.png"/>
+                    <span> Map </span>
+                </div>
+            </a>
+            <a href="timer.html" onclick=" showContent('timer.html',false,event)">
+                <div class="time">
+                    <img src="img/Time.png"/>
+                    <span>Time</span>
+                </div>
+            </a>
+        </div>
+        <div class="items-2">
+            <div class="Notes">
+                <img src="img/notes.png"/>
+                <span>Notes</span>
+            </div>
+
+            <div class="Friends">
+                <img src="img/Unionmen.png"/>
+                <span> Friends </span>
+            </div>
+            <div class="Friends">
+                <img src="img/Unionmen.png"/>
+                <span>Photos</span>
+            </div>
+            <div class="Settings">
+                <div class="img">
+                    <img src="img/Time.png" class="seting"/>
+                    <img src="img/Vector_bot.png" class="vector_bot"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id='contentBody'>
+
+</div>
+<script src="app.js">
+</script>
+</body>
+</html>

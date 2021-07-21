@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+.mainMap {
+    background-color: white;
+    margin-left: 32px;
+    padding: 20px 16px;
+}
+
+
+.spinner-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.spinner-border img {
+    background-color: white;
+}
+
+.mainHeader {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 20px;
+
+
+}
+
+.mainHeader img {
+    height: 5.0px;
+    width: 10.0px;
+    left: 10px;
+    top: 5px;
+
+}
+
+.mainHeader span {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    text-align: left;
+
+}
+
+#YMapsID {
+    margin-top: 16px;
+    height: 404px;
+    width: 1180px;
+
+}
+
+.main-head {
+    margin-top: 24px;
+    display: flex;
+    background-color: #E5E5E5;
+    margin-left: 32px;
+    justify-content: center;
+}
