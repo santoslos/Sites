@@ -1,15 +1,14 @@
 sessionStorage.setItem('sec', '0');
-sessionStorage.setItem('min', '0');
-sessionStorage.setItem('h', '0');
 
-async function showContent(link, checkPush = false) {
-    debugger;
+async function showContent(link, checkPush = false, e) {
+    if (e) {
+        e.preventDefault()
+    }
     let content = document.getElementById('contentBody');
 
     let text = await (await fetch(link)).text();
 
     content.innerHTML = text;
-    console.log(content.querySelectorAll('script'))
     content.querySelectorAll('script').forEach((script) => {
         let parentElement = script.parentElement
         script.parentElement.removeChild(script);
@@ -21,7 +20,6 @@ async function showContent(link, checkPush = false) {
         else {
             newScript.innerText = script.innerText
         }
-        console.log(newScript)
         parentElement.appendChild(newScript);
     })
 
@@ -32,15 +30,18 @@ async function showContent(link, checkPush = false) {
         window.history.replaceState({link: link}, null, link);
 
     }
-    window.addEventListener('popstate', function (e) {
-        showContent(e.state.link, true);
-    });
+
     createActive();
+
 }
+
+window.addEventListener('popstate', function (e) {
+    showContent(e.state.link, true);
+});
 
 
 if (sessionStorage.getItem('page')) {
-    showContent(sessionStorage.getItem('page'));
+    showContent(sessionStorage.getItem('page'), true);
 } else {
     showContent('activety.html');
 }
